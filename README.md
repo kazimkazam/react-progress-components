@@ -22,20 +22,19 @@ yarn add react-progress-components
 
 ## Usage
 
-There is a total of 4 types of progress bars available: 
+There is a total of 3 types of progress bars available: 
 
 - TopBar; 
-- BottomBar;
 - Circle;
 - Line.
 
-TopBar and BottomBar will automatically fill the top and bottom of the div they are inserted on, respectively.
+TopBar will automatically fill the top of the div they are inserted on.
 
 In case a prop is not provided to the component, a default value will be assumed.
 
 #### The possible values for each prop are the following (check on the examples which props each Progress Bar type accepts):
 
-- type: String - 'topBar', 'bottomBar', 'circle'and 'line'. Default: 'topBar'
+- type: String - 'topBar', 'circle'and 'line'. Default: 'topBar'
 - method: String - 'auto', 'manual'. Default: 'auto'
 - progress: any number 0-100. Default: 5
 - colors: array of 3 strings with the 3 colors to be used. Default: [ 'rgba(14,24,95,1)', 'rgba(0,255,209,1)', 'rgba(49,225,247,1)' ]
@@ -57,20 +56,6 @@ import { ProgressBarComponent } from 'react-progress-components';
 const Example = () => {
   return(
     <ProgressBarComponent type={ 'topBar' } method={ 'auto' } progress={ 5 } colors={ ['blue', 'yellow', 'red'] } height={ '2rem' } />
-  );
-};
-```
-
-### BottomBar
-
-```jsx
-import React from 'react';
-
-import { ProgressBarComponent } from 'react-progress-components';
-
-const Example = () => {
-  return(
-    <ProgressBarComponent type={ 'bottomBar' } method={ 'auto' } progress={ 5 } colors={ ['blue', 'yellow', 'red'] } height={ '2rem' } />
   );
 };
 ```
@@ -121,11 +106,11 @@ const Example = () => {
   if (!condition) {
     return(
       <ProgressBarComponent type={ 'topBar' } method={ 'auto' } progress={ 5 } colors={ ['blue', 'yellow', 'red'] } height={ '2rem' } />
-    )
+    );
   } else {
     return(
       <ProgressBarComponent type={ 'topBar' } method={ 'auto' } progress={ 100 } colors={ ['blue', 'yellow', 'red'] } height={ '2rem' } />
-    )
+    );
   };
 };
 ```
@@ -144,11 +129,11 @@ const Example = () => {
     if (condition) {
       setProgress(newValueOfYourChoice)
     };
-  })
+  });
 
   return(
     <ProgressBarComponent type={ 'topBar' } method={ 'auto' } progress={ progress } colors={ ['blue', 'yellow', 'red'] } height={ '2rem' } />
-  )
+  );
 };
 ```
 

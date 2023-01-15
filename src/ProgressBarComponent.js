@@ -42,14 +42,6 @@ const ProgressBarComponent = (props) => {
         );
     };
 
-    if (props.type === 'bottomBar') {
-        return(
-            <div>
-                <BottomBarComponent progress={ progress } colors={ props.colors } height={ height } />
-            </div>
-        );
-    };
-
     // else / default return type 'topBar'
     return(
         <div>
