@@ -53,7 +53,7 @@ const ProgressBarComponent = (props) => {
     // else / default return type 'topBar'
     return(
         <div>
-            <TopBarComponent progress={ progress } colors={ props.colors }  height={ height } />
+            <TopBarComponent progress={ progress } colors={ props.colors } height={ height } />
         </div>
     );
 };
