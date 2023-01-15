@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { CircleBarComponent } from "./Components/CircleBarComponent";
 import { LineBarComponent } from "./Components/LineBarComponent";
 import { TopBarComponent } from "./Components/TopBarComponent";
-import { BottomBarComponent } from "./Components/BottomBarComponent";
 
 const ProgressBarComponent = (props) => {
     const trackColor = props.trackColor ? props.trackColor : '#ddd';
