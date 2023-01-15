@@ -136,7 +136,7 @@ const Example = () => {
   });
 
   return(
-    <ProgressBarComponent type={ 'topBar' } method={ 'auto' } progress={ progress } colors={ ['blue', 'yellow', 'red'] } height={ '2rem' } />
+    <ProgressBarComponent type={ 'topBar' } method={ 'manual' } progress={ progress } colors={ ['blue', 'yellow', 'red'] } height={ '2rem' } />
   );
 };
 ```
