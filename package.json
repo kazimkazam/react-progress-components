@@ -1,10 +1,10 @@
 {
   "name": "react-progress-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Very easy to use React progress bars",
   "author": "kazimkazam",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/kazimkazam/react-progress-components",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",

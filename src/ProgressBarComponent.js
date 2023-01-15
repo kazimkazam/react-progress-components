@@ -34,7 +34,7 @@ const ProgressBarComponent = (props) => {
         );
     };
 
-    if (props.type === 'Line') {
+    if (props.type === 'line') {
         return(
             <div>
                 <LineBarComponent trackColor={ trackColor } progressColor={ progressColor } size={ size } shape={ shape } progress={ progress } textFont={ textFont } textColor={ props.textColor } />

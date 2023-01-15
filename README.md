@@ -31,11 +31,9 @@ There is a total of 4 types of progress bars available:
 
 TopBar and BottomBar will automatically fill the top and bottom of the div they are inserted on, respectively.
 
-Please check the examples bellow to know the props each progress bar type accepts.
-
 In case a prop is not provided to the component, a default value will be assumed.
 
-#### The possible values for each prop are the following (check on the examples which props each Progress Bar Component need):
+#### The possible values for each prop are the following (check on the examples which props each Progress Bar type accepts):
 
 - type: String - 'topBar', 'bottomBar', 'circle'and 'line'. Default: 'topBar'
 - method: String - 'auto', 'manual'. Default: 'auto'
@@ -54,7 +52,7 @@ In case a prop is not provided to the component, a default value will be assumed
 ```jsx
 import React from 'react';
 
-import ProgressBarComponent from 'react-progress-components';
+import { ProgressBarComponent } from 'react-progress-components';
 
 const Example = () => {
   return(
@@ -68,7 +66,7 @@ const Example = () => {
 ```jsx
 import React from 'react';
 
-import ProgressBarComponent from 'react-progress-components';
+import { ProgressBarComponent } from 'react-progress-components';
 
 const Example = () => {
   return(
@@ -82,7 +80,7 @@ const Example = () => {
 ```jsx
 import React from 'react';
 
-import ProgressBarComponent from 'react-progress-components';
+import { ProgressBarComponent } from 'react-progress-components';
 
 const Example = () => {
   return(
@@ -96,7 +94,7 @@ const Example = () => {
 ```jsx
 import React from 'react';
 
-import ProgressBarComponent from 'react-progress-components';
+import { ProgressBarComponent } from 'react-progress-components';
 
 const Example = () => {
   return(
@@ -117,7 +115,7 @@ Check the following examples for more clarification:
 ```jsx
 import React from 'react';
 
-import ProgressBarComponent from 'react-progress-components';
+import { ProgressBarComponent } from 'react-progress-components';
 
 const Example = () => {
   if (!condition) {
@@ -137,7 +135,7 @@ const Example = () => {
 ```jsx
 import React, { useEffect, useState } from 'react';
 
-import ProgressBarComponent from 'react-progress-components';
+import { ProgressBarComponent } from 'react-progress-components';
 
 const Example = () => {
   const [progress, setProgress] = useState(5);
@@ -162,7 +160,7 @@ const Example = () => {
 
 [@Github](https://github.com/kazimkazam/react-progress-components)
 
-[@npm]()
+[@npm](https://www.npmjs.com/package/react-progress-components)
 
 ## License
 

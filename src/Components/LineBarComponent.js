@@ -7,7 +7,7 @@ const LineBarComponent = (props) => {
     const textFont = props.textFont;
     const textColor = props.textColor ? props.textColor : 'white';
 
-    const size = props.size >= 500 ? props.size : 500;
+    const size = props.size >= 200 ? props.size : 200;
     const strokeWidth = (size / 10) - 10;
 
     const start = size * 0.05;
