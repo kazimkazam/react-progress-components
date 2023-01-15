@@ -24,7 +24,7 @@ const LineBarComponent = (props) => {
     return(
         <svg height={ size * 0.1 } width={ size } style={{ margin: "auto", background: "none" }} >
             {/* track */}
-            <line x1={ start } y1={ start } x2={ size * 0.9 } y2={ start } stroke={ trackColor } strokeWidth={ strokeWidth } strokeLinecap={ shape } />
+            <line x1={ start } y1={ start } x2={ lineLength } y2={ start } stroke={ trackColor } strokeWidth={ strokeWidth } strokeLinecap={ shape } />
             {/* progress */}
             <line x1={ start } y1={ start } x2={ lineOffset } y2={ start } stroke={ progressColor } strokeWidth={ strokeWidth } strokeLinecap={ shape } />
             <text x={ (size / 2) + (size * 0.02) } y={ start * 1.5 } fontFamily={ textFont } fontSize={ fontSize } fill={ textColor } textAnchor="middle">
