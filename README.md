@@ -35,15 +35,19 @@ Please check the examples bellow to know the props each progress bar type accept
 
 In case a prop is not provided to the component, a default value will be assumed.
 
-#### The possible values for each prop are the following:
+#### The possible values for each prop are the following (check on the examples which props each Progress Bar Component need):
 
 - type: String - 'topBar', 'bottomBar', 'circle'and 'line'. Default: 'topBar'
 - method: String - 'auto', 'manual'. Default: 'auto'
 - progress: any number 0-100. Default: 5
 - colors: array of 3 strings with the 3 colors to be used. Default: [ 'rgba(14,24,95,1)', 'rgba(0,255,209,1)', 'rgba(49,225,247,1)' ]
+- size: number. Default: 100
 - height: string with the desired height for the bar. The value can be given with any units, i.e., px, rem... Default: '20px'
 - trackColor: string with the color. Default: '#ddd'
 - progressColor: string with the color. Default: 'blue'
+- shape: string with the format, either 'round' or 'square'. Default: 'round'
+- textFont: string with the font. Default: 'Arial'
+- textColor: string with the color. Default: 'white
 
 ### TopBar
 
