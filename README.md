@@ -126,13 +126,11 @@ const Example = () => {
   const [progress, setProgress] = useState(5);
 
   useEffect(() => {
-    useEffect(() => {
-      if (progress >= 0 && progress < 100) {
-        setTimeout(() => {
-          setProgress(progress + 5);
-        }, 250);
-      };
-    });
+    if (progress >= 0 && progress < 100) {
+      setTimeout(() => {
+        setProgress(progress + 5);
+      }, 250);
+    };
   });
 
   return(
