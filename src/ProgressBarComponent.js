@@ -32,13 +32,13 @@ const ProgressBarComponent = (props) => {
         };
     });
 
-    if (props.type === 'circle') {
-        return(
-            <div>
-                <CircleBarComponent trackColor={ trackColor } progressColor={ progressColor } size={ size } progress={ progress } textFont={ textFont } />
-            </div>
-        );
-    };
+    // if (props.type === 'circle') {
+    //     return(
+    //         <div>
+    //             <CircleBarComponent trackColor={ trackColor } progressColor={ progressColor } size={ size } progress={ progress } textFont={ textFont } />
+    //         </div>
+    //     );
+    // };
 
     if (props.type === 'line') {
         return(
@@ -47,6 +47,12 @@ const ProgressBarComponent = (props) => {
             </div>
         );
     };
+
+    return(
+        <div>
+            <CircleBarComponent trackColor={ trackColor } progressColor={ progressColor } size={ size } progress={ progress } textFont={ textFont } />
+        </div>
+    );
 };
 
 export { ProgressBarComponent }

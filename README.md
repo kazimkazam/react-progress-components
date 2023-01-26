@@ -29,17 +29,17 @@ There is a total of 2 types of progress bars available:
 
 In case a prop is not provided to the component, the Circle progress bar will be returned by default.
 
-#### The possible values for each prop are the following (check on the examples which props each Progress Bar type accepts):
+#### The possible values for each prop are the following:
 
-- type: String - 'topBar', 'circle'and 'line'. Default: 'topBar'
+- type: String - 'circle'and 'line'. Default: 'circle'
 - method: String - 'auto', 'manual'. Default: 'auto'
-- trackColor: string with the color. Default: '#ddd'
-- progressColor: string with the color. Default: 'blue'
-- size: number. Default: 100
-- textFont: string with the font. Default: 'Arial'
-- textColor: string with the color. Only valid for type Line. Default: 'white
-- shape: string with the format, either 'round' or 'square'. Only valid for type Line. Default: 'round'
-- progress: any number 0-100. Default: 5
+- trackColor: String with the color. Default: '#ddd'
+- progressColor: String with the color. Default: 'blue'
+- size: Number. Default: 100
+- textFont: String with the font. Default: 'Arial'
+- textColor: String with the color. Only valid for type Line. Default: 'white'
+- shape: String with the format, either 'round' or 'square'. Only valid for type Line. Default: 'round'
+- progress: Number ranging 0-100. Default: 5
 
 
 ### Circle
