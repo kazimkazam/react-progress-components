@@ -12,9 +12,11 @@ const ProgressBarComponent = (props) => {
 
     const shape = props.shape ? props.shape : 'round';
 
-    if (props.method === 'auto' && progress <= 100) {
+    if (props.method === 'auto') {
         var [progress, setProgress] = useState(props.progress ? props.progress : 5);
-    } else if (props.method === 'manual') {
+    };
+
+    if (props.method === 'manual') {
         if (props.progress) {
             if (props.progress >= 0 && props.progress <= 100) {
                 var progress = props.progress;

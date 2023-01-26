@@ -24,7 +24,7 @@ const App = () => {
 
         <div className='card'>
           <p>Card 2</p>
-          <ProgressBarComponent type={ 'line' } method={ 'manual' } trackColor={ '#ddd' } progressColor={ 'red' } size={ 400 } textFont={ 'Arial' } textColor={ 'white' } shape={ 'round' } progress={ progress } />
+          <ProgressBarComponent type={ 'line' } method={ 'auto' } trackColor={ '#ddd' } progressColor={ 'red' } size={ 400 } textFont={ 'Arial' } textColor={ 'white' } shape={ 'round' } progress={ 5 } />
         </div>
       </div>
     </div>
