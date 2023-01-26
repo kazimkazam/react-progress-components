@@ -17,8 +17,6 @@ const LineBarComponent = (props) => {
     const lineLength = size - size * 0.05;
     const lineOffset = lineLength * ((progress) / 100);
 
-    console.log(lineLength);
-
     const shape = props.shape;
 
     const fontSize = strokeWidth >= 15 ? strokeWidth : 15;

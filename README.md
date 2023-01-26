@@ -22,43 +22,25 @@ yarn add react-progress-components
 
 ## Usage
 
-There is a total of 3 types of progress bars available: 
+There is a total of 2 types of progress bars available: 
 
-- TopBar; 
 - Circle;
 - Line.
 
-TopBar will automatically fill the top of the div they are inserted on.
-
-In case a prop is not provided to the component, a default value will be assumed.
+In case a prop is not provided to the component, the Circle progress bar will be returned by default.
 
 #### The possible values for each prop are the following (check on the examples which props each Progress Bar type accepts):
 
 - type: String - 'topBar', 'circle'and 'line'. Default: 'topBar'
 - method: String - 'auto', 'manual'. Default: 'auto'
-- progress: any number 0-100. Default: 5
-- colors: array of 3 strings with the 3 colors to be used. Default: [ 'rgba(14,24,95,1)', 'rgba(0,255,209,1)', 'rgba(49,225,247,1)' ]
-- size: number. Default: 100
-- height: string with the desired height for the bar. The value can be given with any units, i.e., px, rem... Default: '20px'
 - trackColor: string with the color. Default: '#ddd'
 - progressColor: string with the color. Default: 'blue'
-- shape: string with the format, either 'round' or 'square'. Default: 'round'
+- size: number. Default: 100
 - textFont: string with the font. Default: 'Arial'
-- textColor: string with the color. Default: 'white
+- textColor: string with the color. Only valid for type Line. Default: 'white
+- shape: string with the format, either 'round' or 'square'. Only valid for type Line. Default: 'round'
+- progress: any number 0-100. Default: 5
 
-### TopBar
-
-```jsx
-import React from 'react';
-
-import { ProgressBarComponent } from 'react-progress-components';
-
-const Example = () => {
-  return(
-    <ProgressBarComponent type={ 'topBar' } method={ 'auto' } progress={ 5 } colors={ ['blue', 'yellow', 'red'] } height={ '2rem' } />
-  );
-};
-```
 
 ### Circle
 
@@ -141,7 +123,7 @@ const Example = () => {
 
 ## Author
 
-[kazimkazam](https://github.com/kazimkazam)
+[@kazimkazam](https://github.com/kazimkazam)
 
 ## Repository
 

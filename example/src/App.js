@@ -16,17 +16,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <ProgressBarComponent type={ 'topBar' } method={ 'manual' } progress={ progress } height={ '1.5rem' } />
-
       <div className='content'>
         <div className='card'>
           <p>Card 1</p>
-          <ProgressBarComponent type={ 'circle' } method={ 'manual' } trackColor={ '#ddd' } progressColor={ '#00FFD1' } textFont={ 'Arial' } size={ 200 } progress={ progress } />
+          <ProgressBarComponent type={ 'circle' } method={ 'manual' } trackColor={ '#ddd' } progressColor={ '#00FFD1' } size={ 500 } textFont={ 'Arial' } progress={ progress } />
         </div>
 
         <div className='card'>
           <p>Card 2</p>
-          <ProgressBarComponent type={ 'line' } method={ 'manual' } trackColor={ '#ddd' } shape={ 'round' } progressColor={ 'red' } textFont={ 'Arial' } textColor={ 'white' } size={ 500 } progress={ progress } />
+          <ProgressBarComponent type={ 'line' } method={ 'manual' } trackColor={ '#ddd' } progressColor={ 'red' } size={ 500 } textFont={ 'Arial' } textColor={ 'white' } shape={ 'round' } progress={ progress } />
         </div>
       </div>
     </div>

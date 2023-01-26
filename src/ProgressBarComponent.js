@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CircleBarComponent } from "./Components/CircleBarComponent";
 import { LineBarComponent } from "./Components/LineBarComponent";
-import { TopBarComponent } from "./Components/TopBarComponent";
 
 const ProgressBarComponent = (props) => {
     const trackColor = props.trackColor ? props.trackColor : '#ddd';
@@ -12,8 +11,6 @@ const ProgressBarComponent = (props) => {
     const size = props.size ? props.size : 100;
 
     const shape = props.shape ? props.shape : 'round';
-
-    const height = props.height ? props.height : '20px';
 
     if (props.method === 'auto' && progress <= 100) {
         var [progress, setProgress] = useState(props.progress ? props.progress : 5);
@@ -50,13 +47,6 @@ const ProgressBarComponent = (props) => {
             </div>
         );
     };
-
-    // else / default return type 'topBar'
-    return(
-        <div>
-            <TopBarComponent progress={ progress } colors={ props.colors } height={ height } />
-        </div>
-    );
 };
 
 export { ProgressBarComponent }
