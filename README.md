@@ -35,12 +35,11 @@ In case a prop is not provided to the component, the Circle progress bar will be
 - method: String - 'auto', 'manual'. Default: 'auto'
 - trackColor: String with the color. Default: '#ddd'
 - progressColor: String with the color. Default: 'blue'
-- size: Number. Default: 100
+- size: Number. Circle and Line progress bars have a minimum size. Circle minimum size = 50px, and Line minimum size = 200px
 - textFont: String with the font. Default: 'Arial'
-- textColor: String with the color. Only valid for type Line. Default: 'white'
+- textColor: String with the color. Only valid for type Line. You can use 'transparent' if you do not want the text to appear. Default: 'white'. When using progress bar type Line, if its size is less than 400px, the text color will be by default transparent.
 - shape: String with the format, either 'round' or 'square'. Only valid for type Line. Default: 'round'
 - progress: Number ranging 0-100. Default: 5
-
 
 ### Circle
 
