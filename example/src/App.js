@@ -19,12 +19,12 @@ const App = () => {
       <div className='content'>
         <div className='card'>
           <p>Card 1</p>
-          <ProgressBarComponent type={ 'circle' } method={ 'manual' } trackColor={ '#ddd' } progressColor={ '#00FFD1' } size={ 50 } textFont={ 'Arial' } progress={ progress } />
+          <ProgressBarComponent type={ 'circle' } trackColor={ '#ddd' } progressColor={ '#00FFD1' } size={ 50 } textFont={ 'Arial' } progress={ progress } />
         </div>
 
         <div className='card'>
           <p>Card 2</p>
-          <ProgressBarComponent type={ 'line' } method={ 'auto' } trackColor={ '#ddd' } progressColor={ 'red' } size={ 400 } textFont={ 'Arial' } textColor={ 'white' } shape={ 'round' } progress={ 5 } />
+          <ProgressBarComponent type={ 'line' } trackColor={ '#ddd' } progressColor={ 'red' } size={ 400 } textFont={ 'Arial' } textColor={ 'white' } shape={ 'round' } progress={ progress } />
         </div>
       </div>
     </div>
