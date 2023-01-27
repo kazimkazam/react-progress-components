@@ -4,9 +4,9 @@
 
 [![NPM](https://img.shields.io/npm/v/react-progress-components.svg)](https://www.npmjs.com/package/react-progress-components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-You can check the available loading spinners on the link below:
+You can check some examples of the application of the available progress components on the link below:
 
-
+https://showcase-react-progress-components.netlify.app
 
 ## Install
 
