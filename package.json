@@ -1,6 +1,6 @@
 {
   "name": "react-progress-components",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Very easy to use React progress bars",
   "author": "kazimkazam",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "progress-bar",
     "progress"
   ],
+  "types": "dist/types.d.ts",
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
